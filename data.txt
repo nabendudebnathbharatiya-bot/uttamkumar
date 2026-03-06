@@ -1,0 +1,60 @@
+PlayerMode: auto
+LikeMessage: মহানায়ককে শ্রদ্ধা!
+ShareText: মহানায়ক উত্তম কুমারের এই অনবদ্য প্রেজেন্টেশনটি দেখুন!
+
+=============================================
+- স্লাইড ১: উপরের ভিডিও চলবে ২০ সেকেন্ড (উত্তম কুমারের পরিচিতি)
+=============================================
+[Slide]
+Duration: 20000
+Layout: flex flex-col items-center justify-start p-8 pt-12 bg-gray-900 overflow-hidden
+
+Element: text
+Text: <div class="text-center"><h2 class="text-3xl md:text-5xl text-yellow-400 font-extrabold mb-2 drop-shadow-md">১. বাংলা চলচ্চিত্রের মহানায়ক</h2><p class="text-lg md:text-xl text-gray-300">উত্তম কুমার - যার ভুবনভোলানো হাসিতে মুগ্ধ হয়েছিল আপামর বাঙালি।</p></div>
+Class: anim-fade
+
+Element: youtube
+Src: FtWPQkp4ejM
+Class: mt-6 w-full max-w-3xl aspect-video rounded-xl shadow-[0_0_20px_rgba(250,204,21,0.3)] border-2 border-yellow-500 anim-slide-up
+
+
+=============================================
+- স্লাইড ২: উপরের ভিডিওটি শেষ হওয়ার পর স্লাইড চেঞ্জ হয়ে নিচের ভিডিওটি আসবে
+=============================================
+[Slide]
+Duration: 20000
+Layout: flex flex-col items-center justify-end pb-24 px-8 bg-gray-900 overflow-hidden
+
+Element: youtube
+Src: 7m0bPnjSoe4
+Class: w-full max-w-3xl aspect-video rounded-xl shadow-[0_0_20px_rgba(45,212,191,0.3)] border-2 border-teal-500 anim-zoom
+
+Element: text
+Text: <div class="text-center mt-6"><h2 class="text-3xl md:text-5xl text-teal-400 font-extrabold mb-2 drop-shadow-md">২. সোনালী যুগের উত্তম-সুচিত্রা জুটি</h2><p class="text-lg md:text-xl text-gray-300">বাংলা সিনেমার রূপালী পর্দায় সর্বকালের সেরা রোমান্টিক জুটি।</p></div>
+Class: anim-fade
+
+
+=============================================
+- স্লাইড ৩: মহানায়ক সম্পর্কে ৩টি তথ্য (Exit Animation এর উদাহরণ)
+=============================================
+[Slide]
+Duration: 15000
+Layout: flex flex-col items-center justify-center gap-6 md:gap-8 bg-black overflow-hidden p-4
+
+Element: text
+Text: <div class="bg-blue-950/80 p-6 rounded-2xl border-l-4 border-blue-500 text-left w-full max-w-2xl shadow-lg"><h1 class="text-xl md:text-2xl text-blue-300 font-bold">তার আসল নাম ছিল অরুণ কুমার চট্টোপাধ্যায়। <br><span class="text-sm text-gray-400 font-normal">(৫ সেকেন্ড পর ডানদিকে সরে যাবে)</span></h1></div>
+Class: anim-slide-left
+ExitTime: 5000
+ExitAnimation: anim-slide-out
+
+Element: text
+Text: <div class="bg-green-950/80 p-6 rounded-2xl border-l-4 border-green-500 text-left w-full max-w-2xl shadow-lg"><h1 class="text-xl md:text-2xl text-green-300 font-bold">১৯৪৮ সালে 'দৃষ্টিদান' ছবি দিয়ে তার সিনেমায় আত্মপ্রকাশ। <br><span class="text-sm text-gray-400 font-normal">(৯ সেকেন্ড পর জুম-আউট হয়ে যাবে)</span></h1></div>
+Class: anim-zoom
+ExitTime: 9000
+ExitAnimation: anim-zoom-out
+
+Element: text
+Text: <div class="bg-red-950/80 p-6 rounded-2xl border-l-4 border-red-500 text-left w-full max-w-2xl shadow-lg"><h1 class="text-xl md:text-2xl text-red-300 font-bold">'অ্যান্টনি ফিরিঙ্গি' এবং 'চিড়িয়াখানা' ছবির জন্য তিনি জাতীয় পুরস্কার পান। <br><span class="text-sm text-gray-400 font-normal">(১৩ সেকেন্ড পর মিলিয়ে যাবে)</span></h1></div>
+Class: anim-slide-up
+ExitTime: 13000
+ExitAnimation: anim-fade-out
